@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ala Ben Daoud – Full Stack Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Ala Ben Daoud</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#experience">Expériences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#education">Formation</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span> Disponible pour un Stage PFE
+      </div>
+      <h1 class="hero-name reveal">
+        <span>Ben Daoud</span>
+        <span class="hero-firstname">Ala</span>
+      </h1>
+      <div class="hero-title reveal">
+        <span class="typing-prefix">Je suis </span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+      <p class="hero-desc reveal">
+        Étudiant en Ingénierie – Développement Web, passionné par les architectures modernes,<br>
+        les API REST et le développement de plateformes SaaS.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i> Voir mes projets
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Me contacter
+        </a>
+      </div>
+      <div class="hero-socials reveal">
+        <a href="https://linkedin.com/in/ala-ben-daoud-79723b24a" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/ala-BD" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:alabendawed@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="tel:+21698115865" aria-label="Téléphone">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">01 // À propos</span>
+        <h2 class="section-title">Qui suis-je ?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar reveal">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <img src="photo.jpeg" alt="Ala Ben Daoud" class="avatar-photo" />
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card reveal">
+              <span class="stat-num">4+</span>
+              <span class="stat-label">Stages & Expériences</span>
+            </div>
+            <div class="stat-card reveal">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Projets réalisés</span>
+            </div>
+            <div class="stat-card reveal">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Technologies maîtrisées</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            Étudiant en Ingénierie, spécialité Développement Web à <strong>ESPRIT</strong> et titulaire d'une
+            Licence Appliquée en Informatique. Spécialisé dans la conception et le développement
+            d'applications web <strong>Full Stack</strong>.
+          </p>
+          <p>
+            J'ai une expérience pratique dans le développement de plateformes SaaS et d'applications
+            web avec <strong>React, Node.js, Express.js, Laravel, Spring Boot, PostgreSQL, MongoDB</strong>
+            et MySQL.
+          </p>
+          <p>
+            Intéressé par les architectures modernes, les API REST, les applications
+            <strong>multi-tenant</strong> et les solutions cloud. Motivé, autonome et toujours en
+            quête d'apprentissage rapide.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Menzel Temime, Nabeul, Tunisie</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Cycle Ingénieur – ESPRIT (depuis sept. 2024)</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-car"></i>
+              <span>Permis B – Mobile dans toute la Tunisie</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-language"></i>
+              <span>Français (Professionnel) · Anglais (Intermédiaire)</span>
+            </div>
+          </div>
+          <a href="CV-Ala-Ben-Daoud.pdf" download="CV-Ala-Ben-Daoud.pdf" class="btn btn-primary" style="margin-top:1.5rem">
+            <i class="fas fa-download"></i> Télécharger CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">02 // Compétences</span>
+        <h2 class="section-title">Stack Technique</h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-code"></i>
+            <h3>Langages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">JavaScript (ES6+)</span>
+            <span class="tag">PHP</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-layer-group"></i>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-blue">React.js</span>
+            <span class="tag tag-blue">Angular</span>
+            <span class="tag tag-blue">Tailwind CSS</span>
+            <span class="tag tag-blue">Bootstrap</span>
+            <span class="tag tag-blue">Vite</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-server"></i>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-green">Node.js</span>
+            <span class="tag tag-green">Express.js</span>
+            <span class="tag tag-green">Laravel</span>
+            <span class="tag tag-green">Spring Boot</span>
+            <span class="tag tag-green">Symfony</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-database"></i>
+            <h3>Bases de données & ORM</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-purple">PostgreSQL</span>
+            <span class="tag tag-purple">MySQL</span>
+            <span class="tag tag-purple">MongoDB</span>
+            <span class="tag tag-purple">Supabase</span>
+            <span class="tag tag-purple">Mongoose</span>
+            <span class="tag tag-purple">JPA/Hibernate</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-network-wired"></i>
+            <h3>Architecture & API</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-orange">REST API</span>
+            <span class="tag tag-orange">Microservices</span>
+            <span class="tag tag-orange">API Gateway</span>
+            <span class="tag tag-orange">Socket.IO</span>
+            <span class="tag tag-orange">RabbitMQ</span>
+            <span class="tag tag-orange">Swagger</span>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <i class="fas fa-tools"></i>
+            <h3>DevOps & Outils</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-red">Git</span>
+            <span class="tag tag-red">GitHub</span>
+            <span class="tag tag-red">Docker</span>
+            <span class="tag tag-red">Stripe</span>
+            <span class="tag tag-red">Agile/Scrum</span>
+            <span class="tag tag-red">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">03 // Expériences</span>
+        <h2 class="section-title">Parcours Professionnel</h2>
+      </div>
+      <div class="timeline">
+
+        <!-- VCLOW -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Stage Ingénieur – Développement Web Full Stack</h3>
+                <span class="card-company"><i class="fas fa-building"></i> VCLOW — Tunis, Tunisie</span>
+              </div>
+              <span class="card-date"><i class="far fa-calendar-alt"></i> Juil. 2026 – Août 2026</span>
+            </div>
+            <div class="card-project">
+              <i class="fas fa-rocket"></i>
+              <strong>Projet :</strong> Plateforme SaaS de gestion de coworking
+            </div>
+            <ul class="card-tasks">
+              <li>Conception d'une application web <strong>Full Stack multi-tenant</strong> pour la gestion des espaces de coworking</li>
+              <li>Développement des fonctionnalités de gestion des espaces, réservations et abonnements</li>
+              <li>Intégration de <strong>Stripe</strong> pour les paiements en ligne et génération de reçus PDF</li>
+              <li>Système de messagerie et sessions de communication en <strong>temps réel</strong> (Socket.IO)</li>
+              <li>Gestion des rôles et permissions avec <strong>Row Level Security (RLS)</strong> sur Supabase/PostgreSQL</li>
+              <li>Développement de notifications automatisées et de tableaux de bord administratifs</li>
+            </ul>
+            <div class="card-techs">
+              <span>React</span><span>Vite</span><span>Node.js</span><span>Express.js</span>
+              <span>Supabase</span><span>PostgreSQL</span><span>Socket.IO</span><span>Stripe</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Designet 2025 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Stagiaire – Développement Web</h3>
+                <span class="card-company"><i class="fas fa-building"></i> Designet Web Agency — Menzel Temime, Nabeul</span>
+              </div>
+              <span class="card-date"><i class="far fa-calendar-alt"></i> Juil. 2025 – Août 2025</span>
+            </div>
+            <div class="card-project">
+              <i class="fas fa-rocket"></i>
+              <strong>Projet :</strong> ProductFlow – Plateforme de gestion de produits et commandes
+            </div>
+            <ul class="card-tasks">
+              <li>Développement d'une plateforme web de gestion des produits et des commandes</li>
+              <li>Fonctionnalités d'ajout, modification et suivi des produits</li>
+              <li>Gestion des commandes en <strong>temps réel</strong></li>
+              <li>Interface utilisateur responsive et intuitive</li>
+              <li>Gestion des stocks et des transactions</li>
+            </ul>
+            <div class="card-techs">
+              <span>React.js</span><span>Node.js</span><span>Express.js</span>
+              <span>MongoDB</span><span>Tailwind CSS</span><span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Zahou-Tech -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Stagiaire – Stage de Fin d'Études (PFE)</h3>
+                <span class="card-company"><i class="fas fa-building"></i> Zahou-Tech — Tunis, Tunisie</span>
+              </div>
+              <span class="card-date"><i class="far fa-calendar-alt"></i> Jan. 2024 – Juin 2024</span>
+            </div>
+            <div class="card-project">
+              <i class="fas fa-rocket"></i>
+              <strong>Projet :</strong> Supadata – Plateforme de cartes de visite numériques
+            </div>
+            <ul class="card-tasks">
+              <li>Conception et développement d'une plateforme de cartes de visite numériques</li>
+              <li>Fonctionnalités de création, personnalisation et partage des cartes</li>
+              <li>Intégration du partage via <strong>QR Code</strong>, e-mail et réseaux sociaux</li>
+              <li>Conception de l'interface utilisateur et gestion des données</li>
+            </ul>
+            <div class="card-techs">
+              <span>Laravel</span><span>HTML5</span><span>CSS3</span>
+              <span>JavaScript</span><span>Bootstrap</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Designet 2023 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Stagiaire – Stage de Perfectionnement</h3>
+                <span class="card-company"><i class="fas fa-building"></i> Designet Web Agency — Menzel Temime, Nabeul</span>
+              </div>
+              <span class="card-date"><i class="far fa-calendar-alt"></i> Jan. 2023 – Fév. 2023</span>
+            </div>
+            <div class="card-project">
+              <i class="fas fa-rocket"></i>
+              <strong>Projet :</strong> Perfect Translation – Plateforme de traduction en ligne
+            </div>
+            <ul class="card-tasks">
+              <li>Développement d'une plateforme de traduction entre différentes langues</li>
+              <li>Intégration de la <strong>détection automatique</strong> de la langue</li>
+              <li>Intégration de la traduction de documents</li>
+            </ul>
+            <div class="card-techs">
+              <span>Laravel</span><span>HTML5</span><span>CSS3</span>
+              <span>JavaScript</span><span>Bootstrap</span><span>MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Designet 2022 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Stagiaire – Stage d'Initiation</h3>
+                <span class="card-company"><i class="fas fa-building"></i> Designet Web Agency — Menzel Temime, Nabeul</span>
+              </div>
+              <span class="card-date"><i class="far fa-calendar-alt"></i> Jan. 2022 – Fév. 2022</span>
+            </div>
+            <div class="card-project">
+              <i class="fas fa-rocket"></i>
+              <strong>Projet :</strong> Molka Delivery – Site de livraison en ligne
+            </div>
+            <ul class="card-tasks">
+              <li>Développement d'un site web de livraison en ligne</li>
+              <li>Fonctionnalités de commande et suivi des livraisons</li>
+              <li>Conception des interfaces web</li>
+            </ul>
+            <div class="card-techs">
+              <span>PHP</span><span>HTML5</span><span>CSS3</span><span>WAMP</span><span>VS Code</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">04 // Projets</span>
+        <h2 class="section-title">Projets Académiques & Personnels</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-icon">
+            <i class="fas fa-store"></i>
+          </div>
+          <div class="project-content">
+            <h3>Plateforme e-commerce de meubles</h3>
+            <p class="project-arch"><i class="fas fa-cubes"></i> Architecture Microservices</p>
+            <p>Plateforme modulaire comprenant catalogues, commandes, authentification, promotions, service client et garanties. API Gateway + découverte de services, communication asynchrone via RabbitMQ.</p>
+          </div>
+          <div class="project-techs">
+            <span>Angular</span><span>Spring Boot</span><span>API Gateway</span>
+            <span>MySQL</span><span>MongoDB</span><span>RabbitMQ</span><span>Docker</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="project-content">
+            <h3>Gestion administrative d'un foyer universitaire</h3>
+            <p class="project-arch"><i class="fas fa-leaf"></i> Backend Spring Boot</p>
+            <p>API REST complète pour la gestion des étudiants, chambres, blocs, foyers et réservations. Architecture en couches (Entity/Repository/Service/Controller), ORM JPA/Hibernate et documentation Swagger.</p>
+          </div>
+          <div class="project-techs">
+            <span>Spring Boot</span><span>JPA/Hibernate</span><span>MySQL</span><span>Swagger</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">
+            <i class="fas fa-box-open"></i>
+          </div>
+          <div class="project-content">
+            <h3>Plateforme de gestion de produits</h3>
+            <p class="project-arch"><i class="fas fa-database"></i> MERN Stack</p>
+            <p>Application web de gestion des produits, catégories, commandes, clients, fournisseurs et livraisons. API REST avec Node.js/Express.js et MongoDB/Mongoose pour la persistance des données.</p>
+          </div>
+          <div class="project-techs">
+            <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span><span>Mongoose</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-icon">
+            <i class="fas fa-users-cog"></i>
+          </div>
+          <div class="project-content">
+            <h3>Gestion des ressources humaines</h3>
+            <p class="project-arch"><i class="fas fa-code-branch"></i> Java / Symfony</p>
+            <p>Plateforme de gestion des employés, départements, absences, congés, contrats et performances. Double stack Java backend et Symfony frontend.</p>
+          </div>
+          <div class="project-techs">
+            <span>Symfony</span><span>PHP</span><span>Java</span><span>MySQL</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section class="education section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">05 // Formation</span>
+        <h2 class="section-title">Parcours Académique</h2>
+      </div>
+      <div class="edu-grid">
+
+        <div class="edu-card reveal edu-current">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge">En cours</span>
+            <h3>Cycle d'Ingénieur en Développement Web</h3>
+            <p class="edu-school"><i class="fas fa-school"></i> ESPRIT – École Supérieure Privée d'Ingénierie et de Technologies</p>
+            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Ariana, Tunisie</p>
+            <p class="edu-date"><i class="far fa-calendar-alt"></i> Depuis septembre 2024</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="edu-body">
+            <h3>Licence Appliquée en Informatique</h3>
+            <p class="edu-school"><i class="fas fa-school"></i> ISET Gafsa</p>
+            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Gafsa, Tunisie</p>
+            <p class="edu-date"><i class="far fa-calendar-alt"></i> 2021 – 2024</p>
+          </div>
+        </div>
+
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+          <div class="edu-body">
+            <h3>Baccalauréat Technique</h3>
+            <p class="edu-school"><i class="fas fa-school"></i> Lycée Taib Mhiri</p>
+            <p class="edu-location"><i class="fas fa-map-marker-alt"></i> Menzel Temime, Nabeul</p>
+            <p class="edu-date"><i class="far fa-calendar-alt"></i> 2020 – 2021</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">06 // Contact</span>
+        <h2 class="section-title">Travaillons ensemble</h2>
+        <p class="section-sub reveal">Je suis disponible pour un Stage de Fin d'Études (PFE).<br>N'hésitez pas à me contacter.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-links reveal">
+          <a href="mailto:alabendawed@gmail.com" class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">alabendawed@gmail.com</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="tel:+21698115865" class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Téléphone</span>
+              <span class="contact-value">+216 98 115 865</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://linkedin.com/in/ala-ben-daoud-79723b24a" target="_blank" class="contact-card">
+            <div class="contact-icon linkedin">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">ala-ben-daoud-79723b24a</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <a href="https://github.com/ala-BD" target="_blank" class="contact-card">
+            <div class="contact-icon github">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/ala-BD</span>
+            </div>
+            <i class="fas fa-arrow-right contact-arrow"></i>
+          </a>
+          <div class="contact-card no-link">
+            <div class="contact-icon location">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-info">
+              <span class="contact-label">Localisation</span>
+              <span class="contact-value">Menzel Temime, Nabeul, Tunisie</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" placeholder="Votre nom" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Sujet</label>
+              <input type="text" id="subject" name="subject" placeholder="Proposition de stage PFE..." />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <i class="fas fa-paper-plane"></i> Envoyer le message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">Ala Ben Daoud</a>
+        <p class="footer-copy">Conçu &amp; développé par <strong>Ben Daoud Ala</strong> · 2026</p>
+        <div class="footer-socials">
+          <a href="https://linkedin.com/in/ala-ben-daoud-79723b24a" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/ala-BD" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="mailto:alabendawed@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
