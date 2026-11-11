@@ -571,6 +571,7 @@ contactForm.addEventListener('submit', async (e) => {
   const field   = (id) => contactForm.querySelector(`#${id}`).value.trim();
   const name    = field('name');
   const email   = field('email');
+  const phone   = field('phone');
   const subject = field('subject') || 'Nouveau message depuis le portfolio';
   const message = field('message');
 
@@ -582,6 +583,10 @@ contactForm.addEventListener('submit', async (e) => {
     showToast('Adresse e-mail invalide.', 'error');
     return;
   }
+  if (phone && !/^\+?[\d\s().-]{6,20}$/.test(phone)) {
+    showToast('Numéro de téléphone invalide.', 'error');
+    return;
+  }
 
   submitBtn.disabled = true;
   submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> <span>Envoi en cours…</span>';
@@ -590,10 +595,13 @@ contactForm.addEventListener('submit', async (e) => {
     const res = await fetch(FORM_ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      // Keys become the row labels of the e-mail table, in this order
       body: JSON.stringify({
-        name,
-        email,
-        message,
+        'Nom': name,
+        'Email': email,
+        'Téléphone': phone || '—',
+        'Sujet': subject,
+        'Message': message,
         _subject: `[Portfolio] ${subject}`,
         _replyto: email,
         _template: 'table',
